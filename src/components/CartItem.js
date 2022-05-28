@@ -23,7 +23,7 @@ const Wrapper = styled.article`
   margin-bottom: 3rem;
   align-items: center;
   .title {
-    grid-template-rows: 75px;
+    height: 100%;
     display: grid;
     grid-template-columns: 75px 125px;
     align-items: center;

@@ -1,17 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import { PageHero, StripeCheckout } from "../components";
-// extra imports
-import { useCartContext } from "../context/cart_context";
-import { Link } from "react-router-dom";
-
+import React from 'react'
+import styled from 'styled-components'
+import { PageHero } from '../components'
 const CheckoutPage = () => {
   return (
     <main>
-      <PageHero title="Checkout"></PageHero>
-      <Wrapper className="page"></Wrapper>
+      <PageHero title='checkout' />
+      <Wrapper className='page'>
+        <h1>checkout here</h1>
+      </Wrapper>
     </main>
-  );
-};
-const Wrapper = styled.div``;
-export default CheckoutPage;
+  )
+}
+const Wrapper = styled.div``
+export default CheckoutPage

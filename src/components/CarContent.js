@@ -9,6 +9,7 @@ import CartTotals from './CartTotals'
 const CartContent = () => {
   return <h4>cart content </h4>
 }
+
 const Wrapper = styled.section`
   .link-container {
     display: flex;

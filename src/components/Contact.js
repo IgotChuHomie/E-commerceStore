@@ -1,32 +1,37 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const Contact = () => {
   return (
     <Wrapper>
-      <div className="section-center">
-        <h3>join our new letter and get 20% off</h3>
-        <div className="content">
+      <div className='section-center'>
+        <h3>Join our newsletter and get 20% off</h3>
+        <div className='content'>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-            tempore veritatis harum fugiat magni eveniet corrupti, unde maxime
-            animi beatae?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            veniam repudiandae vel ab id, fuga praesentium nobis natus ipsam
+            vero?
           </p>
-          <form className="contact-form">
+          <form
+            className='contact-form'
+            action='your form spree id'
+            method='POST'
+          >
             <input
-              type="email"
-              className="form-input"
-              placeholder="enter an email"
+              type='email'
+              className='form-input'
+              placeholder='enter email'
+              name='_replyto'
             />
-            <button type="submit" className="submit-btn">
-              Subscribe
+            <button type='submit' className='submit-btn'>
+              subscribe
             </button>
           </form>
         </div>
       </div>
     </Wrapper>
-  );
-};
+  )
+}
 const Wrapper = styled.section`
   padding: 5rem 0;
   h3 {
@@ -90,6 +95,6 @@ const Wrapper = styled.section`
   @media (min-width: 1280px) {
     padding: 15rem 0;
   }
-`;
+`
 
-export default Contact;
+export default Contact
