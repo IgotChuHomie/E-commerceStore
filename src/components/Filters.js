@@ -34,6 +34,7 @@ const Filters = () => {
             <input
               type="text"
               name="text"
+              value={text}
               placeholder="search products"
               className="search-input"
               onChange={(e) => updateFilters(e)}
