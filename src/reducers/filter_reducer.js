@@ -86,7 +86,13 @@ const filter_reducer = (state, action) => {
     //category
     if (category !== "all") {
       tempProducts = tempProducts.filter(
-        (product) => (product.category === category)
+        (product) => product.category === category
+      );
+    }
+    // company
+    if (company !== "all") {
+      tempProducts = tempProducts.filter(
+        (product) => product.company === company
       );
     }
 
