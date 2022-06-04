@@ -8,8 +8,16 @@ import {
   COUNT_CART_TOTALS,
 } from "../actions";
 
+const getLocaleStorage = () => {
+  let cart = localStorage.getItem("cart");
+  if (cart) {
+    return JSON.parse(cart);
+  } else {
+    return [];
+  }
+};
 const initialState = {
-  cart: [],
+  cart: getLocaleStorage(),
   total_items: 0,
   total_amount: 0,
   shipping_fee: 55,
