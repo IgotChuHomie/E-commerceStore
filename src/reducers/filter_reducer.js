@@ -101,6 +101,12 @@ const filter_reducer = (state, action) => {
         return product.colors.find((c) => c === color);
       });
     }
+    //shipping
+    if (shipping) {
+      tempProducts = tempProducts.filter((product) => {
+        return product.shipping === true;
+      });
+    }
 
     return { ...state, filtered_products: tempProducts };
   }
