@@ -107,6 +107,10 @@ const filter_reducer = (state, action) => {
         return product.shipping === true;
       });
     }
+    //price
+    tempProducts = tempProducts.filter((product) => {
+      return product.price <= price;
+    });
 
     return { ...state, filtered_products: tempProducts };
   }
