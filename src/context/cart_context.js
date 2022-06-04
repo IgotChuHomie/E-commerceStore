@@ -29,6 +29,10 @@ export const CartProvider = ({ children }) => {
   const toggleAmount = (id, value) => {};
   // clear cart
   const clearCart = () => {};
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(state.cart));
+  }, [state.cart]);
   return (
     <CartContext.Provider
       value={{ ...state, addToCart, removeItem, toggleAmount, clearCart }}
