@@ -1,4 +1,3 @@
-// domain/.netlify/functions/hello
 /**
  * function handler
  * @param {*} event
