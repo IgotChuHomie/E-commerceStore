@@ -4,10 +4,11 @@
  * @param {*} context
  * @returns object
  */
- exports.handler = async function (event, context) {
-    return {
-      statusCode: 200,
-      body: "hello",
-    };
+exports.handler = async function (event, context) {
+  const { cart, shipping_fee, total_amount } = JSON.parse(event.body);
+  console.log(cart);
+  return {
+    statusCode: 200,
+    body: "hello",
   };
-  
+};
